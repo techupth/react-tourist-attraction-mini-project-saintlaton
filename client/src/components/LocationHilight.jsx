@@ -23,6 +23,13 @@ function LocationHilight() {
     getLocations();
   }, [inputSearch]);
 
+  const handleTagClick = (tag) => {
+    // Concatenate the clicked tag with the current search input value
+    setInputSearch((prevInputSearch) =>
+      prevInputSearch ? `${prevInputSearch} ${tag}` : tag
+    );
+  };
+
   return (
     <div>
       <div className="location-hilight">
@@ -51,6 +58,7 @@ function LocationHilight() {
             imgSec={item.photos[1]}
             imgThird={item.photos[2]}
             imgForth={item.photos[3]}
+            onTagClick={handleTagClick}
           />
         ))}
       </section>

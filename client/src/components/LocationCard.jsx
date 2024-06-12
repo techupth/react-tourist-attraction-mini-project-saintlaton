@@ -6,6 +6,11 @@ function LocationCard(props) {
   const text = `${props.description}`;
   const previewText = text.slice(0, 100);
 
+  const handleTagClick = (tag) => {
+    // Set the clicked tag as the input search value
+    props.onTagClick(tag);
+  };
+
   return (
     <article className="article-container">
       <figure className="main-img">
@@ -20,7 +25,11 @@ function LocationCard(props) {
         <span className="catagory">
           <p>หมวด </p>
           {props.tags.map((tag, index) => (
-            <p key={index} className="catagory-detail">
+            <p
+              key={index}
+              className="catagory-detail"
+              onClick={() => handleTagClick(tag)}
+            >
               {tag}
             </p>
           ))}
@@ -38,7 +47,14 @@ function LocationCard(props) {
             </div>
           </figure>
           <div className="additional-copy-link">
-            <img src={CopyLink} alt="Copy Link" />
+            <img
+              src={CopyLink}
+              alt="Copy Link"
+              className="copy-link-icon"
+              onClick={() => {
+                navigator.clipboard.writeText(props.url);
+              }}
+            />
           </div>
         </div>
       </section>
