@@ -1,0 +1,40 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-hilight {
+  text-align: center;
+  padding: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.label {
+  text-align: left;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-size: 16px;
+  padding: 8px 0;
+  outline: none;
+  text-align: center;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
