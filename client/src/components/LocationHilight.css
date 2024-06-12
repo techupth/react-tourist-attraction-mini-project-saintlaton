@@ -1,0 +1,49 @@
+body {
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+h1 {
+  color: #1971c2;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.location-hilight {
+  text-align: center;
+  padding: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.label {
+  text-align: left;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #adb5bd;
+  font-size: 16px;
+  padding: 8px 0;
+  outline: none;
+  text-align: center;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
