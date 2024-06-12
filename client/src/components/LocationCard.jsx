@@ -1,6 +1,6 @@
 import "./LocationCard.css";
 
-import CopyLink from "../assets/copylink.svg";
+import CopyLink from "../assets/copy-outline.svg";
 
 function LocationCard(props) {
   const text = `${props.description}`;
@@ -17,7 +17,9 @@ function LocationCard(props) {
         <img src={props.imgMain} alt="Dummy" />
       </figure>
       <section className="article-detail">
-        <h1>{props.title}</h1>
+        <a href={props.url} target="_blank">
+          {props.title}
+        </a>
         <p>{previewText} ...</p>
         <a href={props.url} target="_blank" className="read-more">
           อ่านต่อ

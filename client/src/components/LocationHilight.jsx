@@ -39,7 +39,7 @@ function LocationHilight() {
           <div className="input-container">
             <input
               className="search-input"
-              placeholder="หาที่เที่ยวแล้วไปกัน"
+              placeholder="หาที่เที่ยวแล้วไปกัน..."
               onChange={(e) => setInputSearch(e.target.value)}
               value={inputSearch}
             />

@@ -1,8 +1,17 @@
+body {
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+h1 {
+  color: #1971c2;
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .location-hilight {
@@ -12,7 +21,7 @@
 
 .input-wrapper {
   position: relative;
-  width: 80%; /* Adjust as needed */
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -28,7 +37,7 @@
 .search-input {
   width: 100%;
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #adb5bd;
   font-size: 16px;
   padding: 8px 0;
   outline: none;
