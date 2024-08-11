@@ -1,7 +1,12 @@
 import "./App.css";
+import LocationHilight from "./components/LocationHilight";
 
 function App() {
-  return <div className="App">{/* Start coding here */}</div>;
+  return (
+    <>
+      <LocationHilight />
+    </>
+  );
 }
 
 export default App;
