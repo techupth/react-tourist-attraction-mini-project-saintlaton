@@ -24,10 +24,16 @@ function LocationHilight() {
   }, [inputSearch]);
 
   const handleTagClick = (tag) => {
-    // Concatenate the clicked tag with the current search input value
-    setInputSearch((prevInputSearch) =>
-      prevInputSearch ? `${prevInputSearch} ${tag}` : tag
-    );
+    // Split the current search input into an array of tags
+    const tagsArray = inputSearch.trim().split(/\s+/);
+
+    // Check if the tag is already in the array
+    if (!tagsArray.includes(tag)) {
+      // Concatenate the new tag with the current search input value
+      setInputSearch((prevInputSearch) =>
+        prevInputSearch ? `${prevInputSearch} ${tag}` : tag
+      );
+    }
   };
 
   return (

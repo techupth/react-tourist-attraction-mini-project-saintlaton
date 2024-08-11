@@ -11,22 +11,32 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  padding: 10px;
 }
 
 .location-hilight {
   text-align: center;
   padding: 20px;
+  margin-bottom: 20px;
+}
+.location-hilight h1 {
+  font-size: 60px;
+}
+.location-hilight p {
+  font-size: 20px;
 }
 
 .input-wrapper {
   position: relative;
-  width: 80%;
+  width: 90%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 .label {
   text-align: left;
+  font-size: 1rem;
 }
 
 .input-container {
@@ -38,12 +48,31 @@ h1 {
   width: 100%;
   border: none;
   border-bottom: 2px solid #adb5bd;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 8px 0;
   outline: none;
   text-align: center;
+  font-family: "Noto Sans Thai", sans-serif; /* Apply the desired font */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #495057; /* Example color, adjust as needed */
+  padding: 8px; /* Example padding, adjust as needed */
 }
 
 .search-input::placeholder {
   color: #999;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .location-hilight {
+    padding: 40px;
+  }
+
+  .input-wrapper {
+    max-width: 800px;
+  }
+
+  .card-container {
+    gap: 30px;
+  }
 }
